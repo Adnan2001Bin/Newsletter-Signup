@@ -62,7 +62,7 @@ app.post("/failure" , function (req , res) {
     res.redirect("/")
 })
 
-app.listen(1000, function (request, response) {
+app.listen(process.env.PORT||1000, function (request, response) {
     console.log("Server is running on port 1000");
 
 });
